@@ -3,14 +3,14 @@
     <!-- carousel -->
     <div class="container">
       <div id="demo" class="carousel slide" data-ride="carousel">
-  
+
         <!-- Indicators -->
         <ul class="carousel-indicators">
           <li data-target="#demo" data-slide-to="0" class="active"></li>
           <li data-target="#demo" data-slide-to="1"></li>
           <li data-target="#demo" data-slide-to="2"></li>
         </ul>
-  
+
         <!-- The slideshow -->
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -23,7 +23,7 @@
             <img src="https://agilescrumgroup.nl/wp-content/uploads/wat-is-de-kanban-methode.jpg" alt="" width="500" height="250">
           </div>
         </div>
-  
+
         <!-- Left and right controls -->
         <a class="carousel-control-prev" href="#demo" data-slide="prev">
           <span class="carousel-control-prev-icon"></span>
@@ -33,7 +33,7 @@
         </a>
       </div>
       <br>
-  
+
       <!-- addtask -->
       <div>
         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#add-task">Add Task</button>
@@ -42,7 +42,7 @@
       <!-- cards -->
       <div class="container">
         <div class="row">
-  
+
           <!-- BACK-LOG -->
           <div class="col-md-3">
             <div class="card text-white bg-primary col-md-12 items" style="max-width: 18rem;">
@@ -63,7 +63,7 @@
               </div>
             </div>
           </div>
-  
+
           <!-- TODO -->
           <div class="col-md-3">
             <div class="card standard-card text-white bg-warning col-md-12" style="max-width: 18rem;">
@@ -85,7 +85,7 @@
               </div>
             </div>
           </div>
-  
+
           <!-- DOING -->
           <div class="col-md-3">
             <div class="card standard-card text-white bg-info col-md-12 items" style="max-width: 18rem;">
@@ -107,7 +107,7 @@
               </div>
             </div>
           </div>
-  
+
           <!-- APPROVED -->
           <div class="col-md-3">
             <div class="card standard-card text-white bg-success col-md-12" style="max-width: 18rem;">
@@ -176,7 +176,7 @@
   import {
     kanbanRef
   } from '../firebase'
-  
+
   export default {
     name: 'Board',
     data() {
@@ -199,6 +199,10 @@
           assigned: this.assigned,
           status: 'backlog'
         })
+        this.title = ''
+        this.description = ''
+        this.point = ''
+        this.assigned = ''
       },
       showTask: function() {
         let app = this
@@ -244,11 +248,11 @@
 </script>
 
 <style>
-    .card {
+  .card {
     min-height: 280px;
 }
 
-.card .standard-card {
+  .card .standard-card {
     min-height: 282px;
 }
 </style>

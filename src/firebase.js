@@ -1,13 +1,13 @@
 import { initializeApp } from 'firebase'
 
 const app = initializeApp({
-    apiKey: "AIzaSyCl-yzgfbl34nwgq3nPsVOVySX90eigSPw",
-    authDomain: "kanban-andre.firebaseapp.com",
-    databaseURL: "https://kanban-andre.firebaseio.com",
-    projectId: "kanban-andre",
-    storageBucket: "kanban-andre.appspot.com",
-    messagingSenderId: "436329048334"
+  apiKey: "AIzaSyCiBFhq8FCdEl6BddbCQ5lNeFo7IbVW7CQ",
+  authDomain: "kanban-andre-521a5.firebaseapp.com",
+  databaseURL: "https://kanban-andre-521a5.firebaseio.com",
+  projectId: "kanban-andre-521a5",
+  storageBucket: "kanban-andre-521a5.appspot.com",
+  messagingSenderId: "429280752706"
 })
 
 export const db = app.database()
-export const kanbanRef = db.ref('kanban') 
+export const kanbanRef = db.ref('kanban')

@@ -14,6 +14,5 @@ npm run serve
 ```
 npm run build
 ```
-```
+
 https://kanban-andre-521a5.firebaseapp.com/
-```
